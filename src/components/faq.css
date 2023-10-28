@@ -1,0 +1,44 @@
+.accordion {
+  background: #282828;
+  border: none;
+  font-size: 24px;
+}
+
+.accordion-item {
+  border: none;
+
+}
+.accordion-button {
+  background: #282828;
+  color: white;
+  font-size: 24px;
+  border-radius: 0;
+  border-top: 1px solid #E3E3E3;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-button::after {
+  content: "";
+  background-image: none;
+  display: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #282828;
+  color: white;
+  border-color: none !important;
+
+}
+
+.accordion-button:focus {
+  border-color: none !important;
+}
+
+.accordion-body {
+  background: #282828;
+  color: white;
+}
